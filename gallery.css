@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    padding: 40px 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.header {
+    margin: 30px 0;
+    overflow: hidden;
+}
+
+.header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.header h1 {
+    color: white;
+}
+
+.header p {
+    color: white;
+}
+
+.gallery {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #eee;
+    box-shadow: 1px 2px 3px #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.footer {
+    background-color: #191919;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer small {
+    color: white;
+}
+
+.social svg {
+    max-width: 30px;
+}
+
+.social a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 100%;
+}
+
+.social a.fb {
+    color: #0055bf;
+}
+
+.social a.twt {
+    color: #64bef4;
+}
+
+.social a.ig {
+    color: #ff286d;
+}
+
+.social a.yt {
+    color: #bd0808;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+    .gallery img {
+        height: 170px;
+    }
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 8%;
+    background-color: #191919;
+    border-bottom: 1px solid #f0768b;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+span {
+    color: #f0768b;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover {
+    color: #f0768b;
+    transition: 0.5s;
+}
+
+.btn {
+    background-color: #f0768b;
+    color: white;
+    border: 2px solid white;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 30px;
+    transition: transform 0.5s;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+    border: 2px solid #f0768b;
+    background-color: transparent;
+}
+
+
